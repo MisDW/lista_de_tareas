@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <div class="box_page">
+        <header>
+            <div class="contenedor_titulo">
+                <div class="elementos_titulo">
+                    <span>"YoSoy_Programador"</span>
+                    <h3>Lista de tareas interactiva</h3>
+                </div>
+                <div class="botones_de_interaccion">
+                    <button class="open_form" id="open_form">Añadir Tarea +</button>
+                    <button class="modo_oscuro" id="modo_oscuro"><span class="material-symbols-outlined">lightbulb</span></button>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="contendor_form" id="contendor_form">
+                <form class="formulario" id="formulario">
+                    <span class="close_form" id="close_form">x</span>
+                    <input id="titulo_input" type="text" placeholder="Titulo: " required>
+                    <input id="descripcion_input" type="text" placeholder="Descripcion: " required>
+                    <input id="datos_input" type="datetime-local" required>
+                    <button type="click" id="btn_postear_formulario" class="btn_postear_formulario">Postear</button>
+                </form>
+            </div>
+            <div class="contenedor_tareas" id="contenedor_tareas">
+            </div>
+        </main>
+        <footer>
+
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
